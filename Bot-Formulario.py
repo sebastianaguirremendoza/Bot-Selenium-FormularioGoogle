@@ -38,7 +38,8 @@ driver_path = './Driver/geckodriver.exe'
 driver = webdriver.Firefox(executable_path=driver_path)
 
 # Aqui se debe colocar la URL de su formulario
-driver.get('https://forms.gle/efGTEoYbbNdwxfq78')
+url = 'googleform.com'
+driver.get(url)
 
 # Esperar para cargar todo el formulario, dependiendo de su velocidad de carga se puede variar el tiempo
 time.sleep(10)
